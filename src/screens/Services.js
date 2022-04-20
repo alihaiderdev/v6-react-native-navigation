@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-const Details = ({ route, navigation }) => {
+const Services = ({ route, navigation }) => {
   return (
     <View>
-      <Text>Details</Text>
+      <Text>Services</Text>
     </View>
   );
 };
 
-export default Details;
+export default Services;
 
 const styles = StyleSheet.create({});
