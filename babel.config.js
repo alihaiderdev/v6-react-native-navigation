@@ -5,3 +5,9 @@ module.exports = function (api) {
     plugins: ['react-native-reanimated/plugin'],
   };
 };
+
+// for removing cache in expo fro plugin issues while using drawer navigator
+
+// expo r -c
+
+// copy paste the above line command in terminal for removing cache in expo
