@@ -6,7 +6,7 @@ module.exports = function (api) {
   };
 };
 
-// for removing cache in expo fro plugin issues while using drawer navigator
+// for removing cache in expo for plugin issues while using drawer navigator
 
 // expo r -c
 
