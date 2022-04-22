@@ -2,6 +2,20 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import React from 'react';
 import { Link, useRoute, useNavigation } from '@react-navigation/native';
 
+// for nested navigations
+const Home = () => {
+  const navigation = useNavigation();
+  return (
+    <View>
+      <Text>Home</Text>
+      <Button
+        title='Login'
+        onPress={() => navigation.navigate('UserPanelTab')}
+      />
+    </View>
+  );
+};
+
 // const Home = () => {
 //   return (
 //     <View>
@@ -10,22 +24,22 @@ import { Link, useRoute, useNavigation } from '@react-navigation/native';
 //   );
 // };
 
-// Link component
-const Home = () => {
-  return (
-    <View>
-      <Link to={{ screen: 'About' }} style={{ fontSize: 25 }}>
-        About
-      </Link>
-      <Link to={{ screen: 'Contact' }} style={{ fontSize: 25 }}>
-        Contact
-      </Link>
-      <Link to={{ screen: 'Services' }} style={{ fontSize: 25 }}>
-        Services
-      </Link>
-    </View>
-  );
-};
+// // Link component
+// const Home = () => {
+//   return (
+//     <View>
+//       <Link to={{ screen: 'About' }} style={{ fontSize: 25 }}>
+//         About
+//       </Link>
+//       <Link to={{ screen: 'Contact' }} style={{ fontSize: 25 }}>
+//         Contact
+//       </Link>
+//       <Link to={{ screen: 'Services' }} style={{ fontSize: 25 }}>
+//         Services
+//       </Link>
+//     </View>
+//   );
+// };
 
 // // route and navigation
 // const Home = ({ route, navigation }) => {
